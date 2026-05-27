@@ -1,7 +1,7 @@
 // Problem 1
 
-const filterEvenNumbers = (numbers: number[]): number[] => {
-  return numbers.filter((num) => num % 2 === 0);
+const filterEvenNumbers = (arrOfNum: number[]): number[] => {
+  return arrOfNum.filter((num) => num % 2 === 0);
 };
 
 // Problem 2
@@ -71,8 +71,7 @@ class Student extends Person {
 
 // Problem 7
 
-type NumArr = number[];
-
-const getIntersection = (arrOfNum1: NumArr, arrOfNum2: NumArr): NumArr => {
+const getIntersection = (arrOfNum1: number[], arrOfNum2: number[]): number[] => {
   return arrOfNum1.filter((num) => arrOfNum2.includes(num));
 };
+
