@@ -44,3 +44,35 @@ const toggleReadStatus = (bookInfo: Book) => {
     isRead: true,
   };
 };
+
+// Problem 6
+
+class Person {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+class Student extends Person {
+  grade: string;
+  constructor(name: string, age: number, grade: string) {
+    super(name, age);
+    this.grade = grade;
+  }
+
+  getDetails() {
+    return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
+  }
+}
+
+// Problem 7
+
+type NumArr = number[];
+
+const getIntersection = (arrOfNum1: NumArr, arrOfNum2: NumArr): NumArr => {
+  return arrOfNum1.filter((num) => arrOfNum2.includes(num));
+};
