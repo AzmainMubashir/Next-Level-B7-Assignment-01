@@ -1,4 +1,4 @@
-# Why 'any' is Called a “Type Safety Hole” and 'unknown' is Safer in TypeScript and Concept of Type Narrowing
+# Why `any` is Called a “Type Safety Hole” and `unknown` is Safer in TypeScript and Concept of Type Narrowing
 
 ## Introduction
 
@@ -85,3 +85,5 @@ Inside the if block, TypeScript now knows: 'value is equal to a string'. So, str
 - `unknown` forces you to validate data before using it. Combined with type narrowing, it helps you write safer and more reliable applications.
 
 - The small effort of checking types upfront can save hours of debugging later and in large codebases, that difference matters a lot.
+
+---
