@@ -1,4 +1,4 @@
-# Why `any` is Called a “Type Safety Hole” and Why `unknown` is Safer in TypeScript
+# Why 'any' is Called a “Type Safety Hole” and 'unknown' is Safer in TypeScript and Concept of Type Narrowing
 
 ## Introduction
 
@@ -11,11 +11,11 @@ In this blog, we will explore why `any` is called a “type safety hole,” why 
 
 ---
 
-## Understanding the `any` Type
+## Understanding the any Type
 
 The `any` type disables TypeScript’s type-checking system completely. Once a variable becomes `any`, TypeScript stops verifying its operations.
 
-### Example of `any`
+### Example of any:
 
 ```ts
 let value: any = "Hello";
@@ -33,13 +33,13 @@ This is why `any` is called a type safety hole — it creates gaps in TypeScript
 
 ---
 
-## Understanding the `unknown` Type
+## Understanding the unknown Type
 
 The `unknown` type is introduced as a safer alternative to `any` still it accepts any value.
 
 Unlike `any`, TypeScript does not allow direct operations on `unknown` values unless the type is verified first.
 
-### Example of `unknown`
+### Example of unknown:
 
 ```ts
 let value: unknown = "Hello";
@@ -63,7 +63,7 @@ TypeScript uses conditions like:
 
 to safely determine what a value actually is.
 
-### Example of Type Narrowing
+### Example of Type Narrowing:
 
 ```ts
 let value: unknown = "Hello TypeScript";
