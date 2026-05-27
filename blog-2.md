@@ -65,6 +65,65 @@ One reusable function. Strict typing preserved. No duplication.
 
 ---
 
+## Generics with Arrays
+
+Generics become even more useful when working with collections.
+
+```ts
+function getFirstItem<T>(items: T[]): T {
+  return items[0];
+}
+```
+
+Usage:
+
+```ts
+const firstNumber = getFirstItem([1, 2, 3]);
+const firstString = getFirstItem(["a", "b", "c"]);
+```
+
+TypeScript understands:
+
+firstNumber → number
+firstString → string
+
+No manual typing needed.
+
+---
+
+## Generics with Interfaces
+
+Generics are commonly used in API response structures.
+
+```ts
+interface ApiResponse<T> {
+  success: boolean;
+  data: T;
+}
+```
+
+Now you can reuse the same interface for different data models.
+
+```ts
+interface User {
+  name: string;
+  age: number;
+}
+
+
+const response: ApiResponse<User> = {
+  success: true,
+  data: {
+    name: "Rahim",
+    age: 25,
+  },
+};
+```
+
+This keeps your API handling consistent and scalable.
+
+---
+
 ## Conclusion
 
 Generics are one of the most important features in TypeScript.
