@@ -84,7 +84,7 @@ const firstString = getFirstItem(["a", "b", "c"]);
 
 TypeScript understands:
 
-firstNumber → number
+firstNumber → number <br>
 firstString → string
 
 No manual typing needed.
