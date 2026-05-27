@@ -5,3 +5,10 @@ function filterEvenNumbers(numbers: number[]): number[] {
 }
 
 
+// Problem 2
+
+function reverseString(word: string): string {
+  return word.split("").reverse().join("");
+}
+
+
